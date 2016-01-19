@@ -1,0 +1,33 @@
+
+
+//include the I/O stream library
+#include <iostream>
+
+//std is an abbreviation of standard. std is the standard namespace
+// cout, cin, and a lot of other things are defined in it.
+using namespace std;
+
+//Start the function main
+int main()
+{
+	//initialize the variable num1
+	int num1;
+	//initialize the variable num2
+	int num2;
+	//User Output
+	cout << "This program adds 2 integrers!" << endl;
+	//User Output
+	cout << "Please enter the first number: ";
+	//Get user input for variable num1
+	//We will see here that there is no endl so the number will be displayed on the same
+	//line as the last statement cout
+	cin >> num1;
+	//User Output
+	cout << "Please enter the second number: ";
+	//Get user input for the variable num2
+	cin >> num2;
+	//Output the user and then add the two numbers we collected in the variables.
+	cout << "The sum of the two numbers is: " << num1 + num2 << endl;
+	//Everything runs fine.
+	return 0;
+}
