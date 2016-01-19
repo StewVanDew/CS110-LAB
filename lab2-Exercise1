@@ -1,0 +1,31 @@
+/*
+fileName: lab2.cpp
+Author: Josh Stewart-Van Dusen
+Purpose: Demonstrate the basics of I/O with variables
+
+*/
+
+
+//include the I/O stream library
+#include <iostream>
+
+//std is an abbreviation of standard. std is the standard namespace
+// cout, cin, and a lot of other things are defined in it.
+using namespace std;
+
+//Start the function main
+int main()
+{
+	//create an int variable named number
+	int number;
+	//outputs a request for a number to command line
+	cout << "Please enter a number.";
+	//get user input that will be saved to the variable number
+	cin >> number;
+	//Output the number to the user
+	cout << "You entered: " << number << endl;
+
+	//returning 0 means that everything ran fine
+	return 0;
+
+}
