@@ -1,0 +1,55 @@
+/*
+fileName: encryption.cpp
+Author: Josh Stewart-Van Dusen
+Purpose: Demonstrate Caesar Cipher. Understanding encryption and decryption
+
+*/
+
+//include I/O stream library
+#include <iostream>
+
+//std is an abbreviation of standard. std is the standard namespace
+// cout, cin, and a lot of other things are defined in it.
+using namespace std;
+
+//start the int function with no params
+int main(){
+	//initialize the variables and set them to char
+	//Char is an array of characters.
+	char letter1, letter2, letter3, letter4, letter5;
+	
+	//Output to user
+	cout << "Please input a five letter word(no spaces). ";
+	//get user input for char variables
+	cin >> letter1 >> letter2 >> letter3 >> letter4 >> letter5;
+	//Output to user 
+	cout << "You wrote: " << letter1 << letter2 << letter3 << letter4 << letter5 << endl;
+	//Output to user;
+	cout << "Now encript the word." << endl;
+
+	//take the variable letters and add 1 to the array to jumble the letters
+	letter1 = letter1 + 1;
+	letter2 = letter2 + 1;
+	letter3 = letter3 + 1;
+	letter4 = letter4 + 1;
+	letter5 = letter5 + 1;
+	//Output to user
+	cout << "After your encription, your word becomes: ";
+	//Output encrypted text
+	cout << letter1 << letter2 << letter3 << letter4 << letter5 << endl;
+
+	//Now lets decrypt the text
+	letter1 = letter1 - 1;
+	letter2 = letter2 - 1;
+	letter3 = letter3 - 1;
+	letter4 = letter4 - 1;
+	letter5 = letter5 - 1;
+
+	//Output to user
+	cout << "Lets decrypt the text. ";
+	//Output decrypted text to user
+	cout << letter1 << letter2 << letter3 << letter4 << letter5 << endl;
+
+	//return 0 to say everything ran fine.
+	return 0;
+}
